@@ -1,42 +1,9 @@
-# giter8 template for projects using GitHub #
+# Michael Hamrah's giter8 template for projects using GitHub #
 
-[![Build Status](http://ci.yuvimasory.com/job/sbt.g8/badge/icon)](http://ci.yuvimasory.com/job/sbt.g8/)
+This is a fork from @ymasory's [sbt.g8 template](https://github.com/ymasory/sbt.g8).  I've bumped up versions, defaulted tests to specs2, and made some configuration changes.
 
-## Template features ##
+## Template Usage and Info
 
-- Integration with your GitHub repo and account.
-- Release section in generated `build.sbt` complies with Sonatype policies for Maven Central Syncing.
-- [sbt-assembly](https://github.com/sbt/sbt-assembly) plugin integrated, for the creation of a single executable jar of your project.
-- Informative `README.md` automatically generated.
-- Reasonable `scalac` and `javac` options chosen.
-- Optional settings provided commented out in generated `build.sbt`.
-- Cross-compilation for all Scala versions 2.8.0 and higher.
-
-## Use this template ##
-
-- [Install giter8 (g8)](https://github.com/n8han/giter8).
-- Get the g8 template and run it:
-
-```sh
-$ g8 ymasory/sbt
-$ cd <name-of-app>
-$ chmod u+x sbt
-$ ./sbt
-> +run
-```
-
-## Modify this template ##
-
-- [Install sbt](https://github.com/harrah/xsbt/wiki/Getting-Started-Setup), version 0.12.0 or higher.
-- Fork [ymasory/sbt.g8](https://github.com/ymasory/sbt.g8) on GitHub to your account.
-Let's assume your account is "foo".
-- Clone it.
-
-```sh
-$ git clone git@github.com:foo/sbt.g8.git
-```
-
-- Now make your desired changes.
 - Do a local deploy of your modified template and try it out.
 
 ```sh
