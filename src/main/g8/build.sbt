@@ -26,14 +26,14 @@ scmInfo := Some(
 // organizationName := "My Company"
 
 /* scala versions and options */
-scalaVersion := "2.10.0"
+scalaVersion := "2.10.1"
 
 crossScalaVersions := Seq(
-  "2.9.3-RC1",
+/*  "2.9.3-RC1",
   "2.9.2",
   "2.9.1", "2.9.1-1",
   "2.9.0", "2.9.0-1",
-  "2.8.0", "2.8.1", "2.8.2"
+  "2.8.0", "2.8.1", "2.8.2" */
 )
 
 // These options will be used for *all* versions.
@@ -123,7 +123,7 @@ libraryDependencies ++= Seq (
    // "net.databinder.dispatch" %% "dispatch-core" % "0.9.2",
   // -- testing --
   // "org.scalacheck" %% "scalacheck" % "1.10.0" % "test",
-  // "org.specs2" %% "specs2" % "1.13",
+   "org.specs2" %% "specs2" % "1.14",
   // "org.scalatest" % "scalatest_2.10" % "2.0.M5b"
 )
 
