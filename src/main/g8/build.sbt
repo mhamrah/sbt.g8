@@ -119,9 +119,9 @@ libraryDependencies ++= Seq (
    // "net.databinder.dispatch" %% "dispatch-core" % "0.9.2",
   // -- testing --
   // "org.scalacheck" %% "scalacheck" % "1.10.0" % "test",
-  , "org.specs2" %% "specs2" % "1.14" % "test"
-  , "org.scalatest" % "scalatest_2.10" % "1.9.1" % "test"
-  // "org.scalatest" % "scalatest_2.10" % "2.0.M5b"
+  //, "org.specs2" %% "specs2" % "1.14" % "test"
+  //, "org.scalatest" % "scalatest_2.10" % "1.9.1" % "test"
+  , "org.scalatest" % "scalatest_2.10" % "2.0.M5b" % "test"
 )
 
 /* you may need these repos */
