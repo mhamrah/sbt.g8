@@ -87,7 +87,7 @@ libraryDependencies ++= Seq (
   // "org.scalaz" %% "scalaz-core" % "7.0.0-M7",
   // "org.scalaz" %% "scalaz-effect" % "7.0.0-M7",
   // -- util --
-  // "com.github.nscala-time" %% "nscala-time" % "0.2.0",
+  "com.github.nscala-time" %% "nscala-time" % "0.4.0"
   // "org.spire-math" % "spire_2.10.0" % "0.3.0-M7",
   // "com.github.scopt" %% "scopt" % "2.1.0",
   // "org.rogach" %% "scallop" % "0.6.3",
@@ -123,7 +123,8 @@ libraryDependencies ++= Seq (
    // "net.databinder.dispatch" %% "dispatch-core" % "0.9.2",
   // -- testing --
   // "org.scalacheck" %% "scalacheck" % "1.10.0" % "test",
-   "org.specs2" %% "specs2" % "1.14" % "test"
+  , "org.specs2" %% "specs2" % "1.14" % "test"
+  , "org.scalatest" % "scalatest_2.10" % "1.9.1" % "test"
   // "org.scalatest" % "scalatest_2.10" % "2.0.M5b"
 )
 
