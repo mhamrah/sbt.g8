@@ -1,9 +1,12 @@
 package $project_group_id$.$name;format="norm,word"$
-import org.scalatest.FunSpec
+import org.scalatest._
+import org.scalatest.matchers._
+import org.scalatest.mock.MockitoSugar
+import org.mockito.Mockito._
 
-class MainSpec extends FunSpec {
-  describe("$name;format="norm,word"$") {
-    it("can pass a test") {
+class MainSpec extends FreeSpec with ShouldMatchers {
+  "The $name;format="norm,word"$ class" - {
+    "should be able to run" in {
       pending
     }
   }
