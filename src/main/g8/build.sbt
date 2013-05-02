@@ -124,7 +124,6 @@ libraryDependencies ++= Seq (
   , "org.scalatest" % "scalatest_2.10" % "2.0.M5b" % "test"
   //, "org.mockito" % "mockito-core" % "1.9.0" % "test"
   , "org.scalamock" %% "scalamock-scalatest-support" % "3.0.1" % "test" 
-
 )
 
 /* you may need these repos */
@@ -185,7 +184,6 @@ pomExtra := (
       <id>$github_username$</id>
       <name>$developer_full_name$</name>
       <email>$developer_email$</email>
-//    <url>http://johndoe.com</url>
     </developer>
   </developers>
 )
