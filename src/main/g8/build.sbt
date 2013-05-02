@@ -113,7 +113,7 @@ libraryDependencies ++= Seq (
   // "org.json4s" %% "json4s-native" % "3.1.0",
   // "com.fasterxml.jackson.module" %% "jackson-module-scala" % "2.1.3",
   // -- concurrency --
-  // "com.typesafe.akka" %% "akka-actor" % "2.2-SNAPSHOT",
+  // "com.typesafe.akka" %% "akka-actor" % "2.1.2",
   // "org.scala-stm" %% "scala-stm" % "0.7",
   // -- network --
    // "net.databinder.dispatch" %% "dispatch-core" % "0.9.2",
