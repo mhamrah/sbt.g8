@@ -124,6 +124,7 @@ libraryDependencies ++= Seq (
   , "org.scalatest" % "scalatest_2.10" % "2.0.M5b" % "test"
   //, "org.mockito" % "mockito-core" % "1.9.0" % "test"
   , "org.scalamock" %% "scalamock-scalatest-support" % "3.0.1" % "test" 
+  ,"io.spray" % "spray-can" % "1.1-M7"
 )
 
 /* you may need these repos */
@@ -135,7 +136,7 @@ resolvers ++= Seq(
   // Resolver.typesafeRepo("snapshots")
   // JavaNet2Repository,
   // JavaNet1Repository,
-  // "spray repo" at "http://repo.spray.io",
+  // "spray repo" at "http://repo.spray.io"
 )
 
 // ivyXML := <dependencies>
