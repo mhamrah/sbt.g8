@@ -116,7 +116,7 @@ libraryDependencies ++= Seq (
   // "com.typesafe.akka" %% "akka-actor" % "2.1.2",
   // "org.scala-stm" %% "scala-stm" % "0.7",
   // -- network --
-   // "net.databinder.dispatch" %% "dispatch-core" % "0.9.2",
+   // "net.databinder.dispatch" %% "dispatch-core" % "0.10.2",
   // -- testing --
   // "org.scalacheck" %% "scalacheck" % "1.10.0" % "test",
   //, "org.specs2" %% "specs2" % "1.14" % "test"
