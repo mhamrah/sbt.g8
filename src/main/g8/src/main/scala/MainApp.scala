@@ -1,7 +1,5 @@
 package $project_group_id$.$name;format="norm,word"$
 
-object Main {
-  def main(args: Array[String]) {
+object $name;format="Camel"$App extends App {
     println("hello sbt.g8")
-  }
 }
