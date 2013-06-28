@@ -17,7 +17,7 @@ scmInfo := Some(
 )
 
 /* scala versions and options */
-scalaVersion := "2.10.1"
+scalaVersion := "2.10.2"
 
 crossScalaVersions := Seq(
 /*  "2.9.3-RC1",
@@ -72,9 +72,9 @@ libraryDependencies ++= Seq (
   // -- Logging --
   ,"ch.qos.logback" % "logback-classic" % "1.0.13"
   // -- Akka --
-  ,"com.typesafe.akka" %% "akka-testkit" % "2.1.4" % "test"
-  ,"com.typesafe.akka" %% "akka-actor" % "2.1.4"
-  ,"com.typesafe.akka" %% "akka-slf4j" % "2.1.4"
+  ,"com.typesafe.akka" %% "akka-testkit" % "2.2.0-RC2" % "test"
+  ,"com.typesafe.akka" %% "akka-actor" % "2.2.0-RC2"
+  ,"com.typesafe.akka" %% "akka-slf4j" % "2.2.0-RC2"
   // -- Sql --
   ,"com.typesafe.slick" %% "slick" % "1.0.1"
 )

@@ -4,7 +4,9 @@ target/
 *~
 /.ensime
 
-/.cache
-/.classpath
-/.project
-/.settings/
+*.cache
+*.classpath
+*.project
+*.settings/
+*.scalastyle
+
