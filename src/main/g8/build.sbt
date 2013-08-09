@@ -61,6 +61,8 @@ scalacOptions <++= scalaVersion map { sv =>
 
 javacOptions ++= Seq("-Xlint:unchecked", "-Xlint:deprecation")
 
+//sprayVersion := "1.2-20130801"
+
 /* dependencies */
 libraryDependencies ++= Seq (
   "com.github.nscala-time" %% "nscala-time" % "0.4.2"
@@ -68,22 +70,25 @@ libraryDependencies ++= Seq (
   //,"net.databinder.dispatch" %% "dispatch-core" % "0.10.1"
   // -- testing --
   , "org.scalatest" % "scalatest_2.10" % "2.0.M5b" % "test"
-  , "org.scalamock" %% "scalamock-scalatest-support" % "3.0.1" % "test" 
+  , "org.scalamock" %% "scalamock-scalatest-support" % "3.0.1" % "test"
   // -- Logging --
   ,"ch.qos.logback" % "logback-classic" % "1.0.13"
   // -- Akka --
-  ,"com.typesafe.akka" %% "akka-testkit" % "2.2.0-RC2" % "test"
-  ,"com.typesafe.akka" %% "akka-actor" % "2.2.0-RC2"
-  ,"com.typesafe.akka" %% "akka-slf4j" % "2.2.0-RC2"
+  ,"com.typesafe.akka" %% "akka-testkit" % "2.2.0" % "test"
+  ,"com.typesafe.akka" %% "akka-actor" % "2.2.0"
+  ,"com.typesafe.akka" %% "akka-slf4j" % "2.2.0"
   // -- Sql --
-  ,"com.typesafe.slick" %% "slick" % "1.0.1"
+  //,"com.typesafe.slick" %% "slick" % "1.0.1"
+  // -- Spray --
+ // ,"io.spray" % "spray-routing" % sprayVersion
+ // ,"io.spray" % "spray-client" % sprayVersion
 )
 
 /* you may need these repos */
 resolvers ++= Seq(
   // Resolver.sonatypeRepo("snapshots")
   // Resolver.typesafeRepo("releases")
-  // "spray repo" at "http://repo.spray.io"
+  //"spray repo" at "http://nightlies.spray.io"
 )
 
 /* assembly plugin */
