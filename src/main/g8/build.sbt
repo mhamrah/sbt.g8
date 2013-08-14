@@ -33,6 +33,7 @@ scalacOptions ++= Seq(
   ,"-unchecked"
   ,"-encoding", "UTF-8"
   ,"-target:jvm-1.7"
+  ,"-Xlint"
   // "-optimise"   // this option will slow your build
 )
 
@@ -61,15 +62,13 @@ scalacOptions <++= scalaVersion map { sv =>
 
 javacOptions ++= Seq("-Xlint:unchecked", "-Xlint:deprecation")
 
-//sprayVersion := "1.2-20130801"
-
 /* dependencies */
 libraryDependencies ++= Seq (
   "com.github.nscala-time" %% "nscala-time" % "0.4.2"
   // -- network --
   //,"net.databinder.dispatch" %% "dispatch-core" % "0.10.1"
   // -- testing --
-  , "org.scalatest" % "scalatest_2.10" % "2.0.M5b" % "test"
+  , "org.scalatest" % "scalatest_2.10" % "2.0.M6-SNAP36" % "test"
   , "org.scalamock" %% "scalamock-scalatest-support" % "3.0.1" % "test"
   // -- Logging --
   ,"ch.qos.logback" % "logback-classic" % "1.0.13"
@@ -80,8 +79,9 @@ libraryDependencies ++= Seq (
   // -- Sql --
   //,"com.typesafe.slick" %% "slick" % "1.0.1"
   // -- Spray --
- // ,"io.spray" % "spray-routing" % sprayVersion
- // ,"io.spray" % "spray-client" % sprayVersion
+  //,"io.spray" % "spray-routing" % "1.2-20130801"
+  //,"io.spray" % "spray-client" % "1.2-20130801"
+  //,"io.spray" % "spray-testkit" % "1.2-20130801" % "test"
 )
 
 /* you may need these repos */
