@@ -82,6 +82,8 @@ libraryDependencies ++= Seq (
   //,"io.spray" % "spray-routing" % "1.2-20130801"
   //,"io.spray" % "spray-client" % "1.2-20130801"
   //,"io.spray" % "spray-testkit" % "1.2-20130801" % "test"
+  // -- json --
+  //,"org.json4s" %% "json4s-native" % "3.2.5"
 )
 
 /* you may need these repos */
