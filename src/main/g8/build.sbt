@@ -99,3 +99,5 @@ mainClass in AssemblyKeys.assembly := Some("$project_group_id$.$name;format="sna
 assemblySettings
 
 test in AssemblyKeys.assembly := {}
+
+atmosSettings
