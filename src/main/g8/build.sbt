@@ -68,7 +68,7 @@ libraryDependencies ++= Seq (
   // -- network --
   //,"net.databinder.dispatch" %% "dispatch-core" % "0.10.1"
   // -- testing --
-  , "org.scalatest" % "scalatest_2.10" % "2.0.M6-SNAP36" % "test"
+  , "org.scalatest" % "scalatest_2.10" % "2.0.RC2" % "test"
   , "org.scalamock" %% "scalamock-scalatest-support" % "3.0.1" % "test"
   // -- Logging --
   ,"ch.qos.logback" % "logback-classic" % "1.0.13"
