@@ -93,11 +93,4 @@ resolvers ++= Seq(
   //"spray repo" at "http://nightlies.spray.io"
 )
 
-/* assembly plugin */
-mainClass in AssemblyKeys.assembly := Some("$project_group_id$.$name;format="snake"$.Main")
-
-assemblySettings
-
-test in AssemblyKeys.assembly := {}
-
 atmosSettings
