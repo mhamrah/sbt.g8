@@ -17,7 +17,7 @@ scmInfo := Some(
 )
 
 /* scala versions and options */
-scalaVersion := "2.10.2"
+scalaVersion := "2.10.3"
 
 crossScalaVersions := Seq(
 /*  "2.9.3-RC1",
@@ -84,6 +84,8 @@ libraryDependencies ++= Seq (
   //,"io.spray" % "spray-testkit" % "1.2-20130801" % "test"
   // -- json --
   //,"org.json4s" %% "json4s-native" % "3.2.5"
+  // -- config --
+  ,"com.typesafe" % "config" % "1.0.2"
 )
 
 /* you may need these repos */
