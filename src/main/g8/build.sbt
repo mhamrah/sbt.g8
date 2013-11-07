@@ -73,15 +73,15 @@ libraryDependencies ++= Seq (
   // -- Logging --
   ,"ch.qos.logback" % "logback-classic" % "1.0.13"
   // -- Akka --
-  ,"com.typesafe.akka" %% "akka-testkit" % "2.2.1" % "test"
-  ,"com.typesafe.akka" %% "akka-actor" % "2.2.1"
-  ,"com.typesafe.akka" %% "akka-slf4j" % "2.2.1"
+  ,"com.typesafe.akka" %% "akka-testkit" % "2.2.3" % "test"
+  ,"com.typesafe.akka" %% "akka-actor" % "2.2.3"
+  ,"com.typesafe.akka" %% "akka-slf4j" % "2.2.3"
   // -- Sql --
   //,"com.typesafe.slick" %% "slick" % "1.0.1"
   // -- Spray --
-  //,"io.spray" % "spray-routing" % "1.2-20130801"
-  //,"io.spray" % "spray-client" % "1.2-20130801"
-  //,"io.spray" % "spray-testkit" % "1.2-20130801" % "test"
+  //,"io.spray" % "spray-routing" % "1.2-RC2"
+  //,"io.spray" % "spray-client" % "1.2-RC2"
+  //,"io.spray" % "spray-testkit" % "1.2-RC2" % "test"
   // -- json --
   //,"org.json4s" %% "json4s-native" % "3.2.5"
   // -- config --
@@ -92,7 +92,7 @@ libraryDependencies ++= Seq (
 resolvers ++= Seq(
   // Resolver.sonatypeRepo("snapshots")
   // Resolver.typesafeRepo("releases")
-  //"spray repo" at "http://nightlies.spray.io"
+  //"spray repo" at "http://repo.spray.io"
 )
 
 atmosSettings
