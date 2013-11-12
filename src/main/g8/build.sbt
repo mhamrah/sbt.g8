@@ -83,7 +83,7 @@ libraryDependencies ++= Seq (
   //,"io.spray" % "spray-client" % "1.2-RC2"
   //,"io.spray" % "spray-testkit" % "1.2-RC2" % "test"
   // -- json --
-  //,"org.json4s" %% "json4s-native" % "3.2.5"
+  ,"org.json4s" %% "json4s-jackson" % "3.2.5"
   // -- config --
   ,"com.typesafe" % "config" % "1.0.2"
 )
@@ -96,3 +96,5 @@ resolvers ++= Seq(
 )
 
 atmosSettings
+
+seq(Revolver.settings: _*)
