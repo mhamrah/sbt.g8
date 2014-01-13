@@ -63,7 +63,7 @@ scalacOptions <++= scalaVersion map { sv =>
 javacOptions ++= Seq("-Xlint:unchecked", "-Xlint:deprecation")
 
 val akka = "2.2.3"
-val spray = "1.2-RC4"
+//val spray = "1.2.0"
 
 /* dependencies */
 libraryDependencies ++= Seq (
@@ -86,7 +86,7 @@ libraryDependencies ++= Seq (
   //,"io.spray" % "spray-client" % spray
   //,"io.spray" % "spray-testkit" % spray % "test"
   // -- json --
-  ,"org.json4s" %% "json4s-jackson" % "3.2.5"
+  ,"org.json4s" %% "json4s-jackson" % "3.2.6"
   // -- config --
   ,"com.typesafe" % "config" % "1.0.2"
 )
