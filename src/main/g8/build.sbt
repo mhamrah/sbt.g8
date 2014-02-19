@@ -74,7 +74,7 @@ libraryDependencies ++= Seq (
   , "org.scalatest" % "scalatest_2.10" % "2.0" % "test"
   , "org.scalamock" %% "scalamock-scalatest-support" % "3.0.1" % "test"
   // -- Logging --
-  ,"ch.qos.logback" % "logback-classic" % "1.0.13"
+  ,"ch.qos.logback" % "logback-classic" % "1.1.1"
   // -- Akka --
   ,"com.typesafe.akka" %% "akka-testkit" % akka % "test"
   ,"com.typesafe.akka" %% "akka-actor" % akka
@@ -88,7 +88,7 @@ libraryDependencies ++= Seq (
   // -- json --
   ,"org.json4s" %% "json4s-jackson" % "3.2.6"
   // -- config --
-  ,"com.typesafe" % "config" % "1.0.2"
+  ,"com.typesafe" % "config" % "1.2.0"
 )
 
 /* you may need these repos */
