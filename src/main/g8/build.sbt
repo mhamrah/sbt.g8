@@ -62,16 +62,16 @@ scalacOptions <++= scalaVersion map { sv =>
 
 javacOptions ++= Seq("-Xlint:unchecked", "-Xlint:deprecation")
 
-val akka = "2.2.3"
-//val spray = "1.2.0"
+val akka = "2.3.0"
+//val spray = "1.3.0"
 
 /* dependencies */
 libraryDependencies ++= Seq (
-  "com.github.nscala-time" %% "nscala-time" % "0.6.0"
+  "com.github.nscala-time" %% "nscala-time" % "0.8.0"
   // -- network --
   //,"net.databinder.dispatch" %% "dispatch-core" % "0.10.1"
   // -- testing --
-  , "org.scalatest" % "scalatest_2.10" % "2.0" % "test"
+  , "org.scalatest" % "scalatest_2.10" % "2.1.0" % "test"
   , "org.scalamock" %% "scalamock-scalatest-support" % "3.0.1" % "test"
   // -- Logging --
   ,"ch.qos.logback" % "logback-classic" % "1.1.1"
@@ -86,7 +86,7 @@ libraryDependencies ++= Seq (
   //,"io.spray" % "spray-client" % spray
   //,"io.spray" % "spray-testkit" % spray % "test"
   // -- json --
-  ,"org.json4s" %% "json4s-jackson" % "3.2.6"
+  ,"org.json4s" %% "json4s-jackson" % "3.2.7"
   // -- config --
   ,"com.typesafe" % "config" % "1.2.0"
 )
@@ -98,6 +98,6 @@ resolvers ++= Seq(
   //"spray repo" at "http://repo.spray.io"
 )
 
-atmosSettings
+//atmosSettings
 
 seq(Revolver.settings: _*)
