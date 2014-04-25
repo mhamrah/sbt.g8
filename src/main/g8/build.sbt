@@ -17,7 +17,7 @@ scmInfo := Some(
 )
 
 /* scala versions and options */
-scalaVersion := "2.10.3"
+scalaVersion := "2.11.0"
 
 crossScalaVersions := Seq(
 /*  "2.9.3-RC1",
@@ -62,19 +62,18 @@ scalacOptions <++= scalaVersion map { sv =>
 
 javacOptions ++= Seq("-Xlint:unchecked", "-Xlint:deprecation")
 
-val akka = "2.3.0"
-//val spray = "1.3.0"
+val akka = "2.3.2"
+//val spray = "1.3.1-20140423"
 
 /* dependencies */
 libraryDependencies ++= Seq (
-  "com.github.nscala-time" %% "nscala-time" % "0.8.0"
+  "com.github.nscala-time" %% "nscala-time" % "1.0.0"
   // -- network --
   //,"net.databinder.dispatch" %% "dispatch-core" % "0.10.1"
   // -- testing --
-  , "org.scalatest" % "scalatest_2.10" % "2.1.0" % "test"
-  , "org.scalamock" %% "scalamock-scalatest-support" % "3.0.1" % "test"
+  , "org.scalatest" % "scalatest_2.11" % "2.1.3" % "test"
   // -- Logging --
-  ,"ch.qos.logback" % "logback-classic" % "1.1.1"
+  ,"ch.qos.logback" % "logback-classic" % "1.1.2"
   // -- Akka --
   ,"com.typesafe.akka" %% "akka-testkit" % akka % "test"
   ,"com.typesafe.akka" %% "akka-actor" % akka
@@ -82,11 +81,11 @@ libraryDependencies ++= Seq (
   // -- Sql --
   //,"com.typesafe.slick" %% "slick" % "1.0.1"
   // -- Spray --
-  //,"io.spray" % "spray-routing" % spray
-  //,"io.spray" % "spray-client" % spray
-  //,"io.spray" % "spray-testkit" % spray % "test"
+  //,"io.spray" % "spray-routing_2.11" % spray
+  //,"io.spray" % "spray-client_2.11" % spray
+  //,"io.spray" % "spray-testkit_2.11" % spray % "test"
   // -- json --
-  ,"org.json4s" %% "json4s-jackson" % "3.2.7"
+  ,"org.json4s" %% "json4s-jackson" % "3.2.9"
   // -- config --
   ,"com.typesafe" % "config" % "1.2.0"
 )
