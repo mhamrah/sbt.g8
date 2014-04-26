@@ -99,4 +99,6 @@ resolvers ++= Seq(
 
 //atmosSettings
 
+packageArchetype.java_server
+
 seq(Revolver.settings: _*)
