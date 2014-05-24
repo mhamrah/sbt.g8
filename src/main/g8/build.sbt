@@ -17,7 +17,7 @@ scmInfo := Some(
 )
 
 /* scala versions and options */
-scalaVersion := "2.11.0"
+scalaVersion := "2.11.1"
 
 crossScalaVersions := Seq(
 /*  "2.9.3-RC1",
@@ -62,7 +62,7 @@ scalacOptions <++= scalaVersion map { sv =>
 
 javacOptions ++= Seq("-Xlint:unchecked", "-Xlint:deprecation")
 
-val akka = "2.3.2"
+val akka = "2.3.3"
 //val spray = "1.3.1-20140423"
 
 /* dependencies */
@@ -74,6 +74,8 @@ libraryDependencies ++= Seq (
   , "org.scalatest" % "scalatest_2.11" % "2.1.3" % "test"
   // -- Logging --
   ,"ch.qos.logback" % "logback-classic" % "1.1.2"
+  ,"com.typesafe.scala-logging" %% "scala-logging-slf4j" % "2.1.2"
+
   // -- Akka --
   ,"com.typesafe.akka" %% "akka-testkit" % akka % "test"
   ,"com.typesafe.akka" %% "akka-actor" % akka
@@ -85,9 +87,9 @@ libraryDependencies ++= Seq (
   //,"io.spray" % "spray-client_2.11" % spray
   //,"io.spray" % "spray-testkit_2.11" % spray % "test"
   // -- json --
-  ,"org.json4s" %% "json4s-jackson" % "3.2.9"
+  ,"org.json4s" %% "json4s-jackson" % "3.2.10"
   // -- config --
-  ,"com.typesafe" % "config" % "1.2.0"
+  ,"com.typesafe" % "config" % "1.2.1"
 )
 
 /* you may need these repos */
