@@ -68,8 +68,6 @@ val akka = "2.3.3"
 /* dependencies */
 libraryDependencies ++= Seq (
   "com.github.nscala-time" %% "nscala-time" % "1.0.0"
-  // -- network --
-  //,"net.databinder.dispatch" %% "dispatch-core" % "0.10.1"
   // -- testing --
   , "org.scalatest" % "scalatest_2.11" % "2.1.3" % "test"
   // -- Logging --
@@ -81,7 +79,7 @@ libraryDependencies ++= Seq (
   ,"com.typesafe.akka" %% "akka-actor" % akka
   ,"com.typesafe.akka" %% "akka-slf4j" % akka
   // -- Sql --
-  //,"com.typesafe.slick" %% "slick" % "1.0.1"
+  //,"com.typesafe.slick" %% "slick" % "2.0.2"
   // -- Spray --
   //,"io.spray" %% "spray-routing" % spray
   //,"io.spray" %% "spray-client" % spray
