@@ -73,7 +73,6 @@ libraryDependencies ++= Seq (
   // -- Logging --
   ,"ch.qos.logback" % "logback-classic" % "1.1.2"
   ,"com.typesafe.scala-logging" %% "scala-logging-slf4j" % "2.1.2"
-
   // -- Akka --
   ,"com.typesafe.akka" %% "akka-testkit" % akka % "test"
   ,"com.typesafe.akka" %% "akka-actor" % akka
