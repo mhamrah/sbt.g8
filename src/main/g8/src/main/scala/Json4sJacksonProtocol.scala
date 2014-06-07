@@ -2,6 +2,7 @@ package $project_group_id$.$name;format="norm,word"$
 
 import spray.httpx.Json4sJacksonSupport
 import org.json4s._
+import java.util.UUID
 
 object Json4sJacksonProtocol extends Json4sJacksonSupport {
    implicit def json4sJacksonFormats: Formats = jackson.Serialization.formats(NoTypeHints) + new UUIDFormat
