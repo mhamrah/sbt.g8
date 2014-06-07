@@ -1,5 +1,6 @@
 target/
 boot/
+project/plugins/project/
 lib_managed/
 src_managed/
-project/plugins/project/
+project/boot/

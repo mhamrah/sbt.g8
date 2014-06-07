@@ -9,4 +9,9 @@ target/
 *.project
 *.settings/
 *.scalastyle
+tags
 
+boot/
+lib_managed/
+src_managed/
+project/plugins/project/
