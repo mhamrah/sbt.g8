@@ -4,7 +4,7 @@ import spray.httpx.Json4sJacksonSupport
 import org.json4s._
 import java.util.UUID
 
-object Json4sJacksonProtocol extends Json4sJacksonSupport {
+object Json4sSupport extends Json4sJacksonSupport {
    implicit def json4sJacksonFormats: Formats = jackson.Serialization.formats(NoTypeHints) + new UUIDFormat
 
   //so you don't need to import
@@ -27,5 +27,4 @@ object Json4sJacksonProtocol extends Json4sJacksonSupport {
   def toJValue[T](value: T): JValue = {
     Extraction.decompose(value)
   }
-
 }
