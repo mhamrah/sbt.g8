@@ -32,7 +32,6 @@ scalacOptions ++= Seq(
   "-deprecation"
   ,"-unchecked"
   ,"-encoding", "UTF-8"
-  ,"-target:jvm-1.7"
   ,"-Xlint"
   // "-optimise"   // this option will slow your build
 )
@@ -45,17 +44,10 @@ scalacOptions ++= Seq(
 // These language flags will be used only for 2.10.x.
 // Uncomment those you need, or if you hate SIP-18, all of them.
 scalacOptions <++= scalaVersion map { sv =>
-  if (sv startsWith "2.10") List(
+  if (sv startsWith "2.11") List(
     "-Xverify"
-    ,"-Ywarn-all"
     ,"-feature"
     ,"-language:postfixOps"
-    // "-language:reflectiveCalls",
-    // "-language:implicitConversions"
-    // "-language:higherKinds",
-    // "-language:existentials",
-    // "-language:experimental.macros",
-    // "-language:experimental.dynamics"
   )
   else Nil
 }
@@ -67,9 +59,9 @@ val spray = "1.3.1-20140423"
 
 /* dependencies */
 libraryDependencies ++= Seq (
-  "com.github.nscala-time" %% "nscala-time" % "1.0.0"
+  "com.github.nscala-time" %% "nscala-time" % "1.2.0"
   // -- testing --
-  , "org.scalatest" % "scalatest_2.11" % "2.1.3" % "test"
+  , "org.scalatest" % "scalatest_2.11" % "2.2.0" % "test"
   // -- Logging --
   ,"ch.qos.logback" % "logback-classic" % "1.1.2"
   ,"com.typesafe.scala-logging" %% "scala-logging-slf4j" % "2.1.2"
