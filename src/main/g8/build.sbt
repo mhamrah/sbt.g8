@@ -6,7 +6,7 @@ version := "0.1.0-SNAPSHOT"
 
 homepage := Some(url("https://github.com/$github_username$/$name;format="norm"$"))
 
-startYear := Some(2013)
+startYear := Some(2014)
 
 scmInfo := Some(
   ScmInfo(
@@ -17,15 +17,7 @@ scmInfo := Some(
 )
 
 /* scala versions and options */
-scalaVersion := "2.11.1"
-
-crossScalaVersions := Seq(
-/*  "2.9.3-RC1",
-  "2.9.2",
-  "2.9.1", "2.9.1-1",
-  "2.9.0", "2.9.0-1",
-  "2.8.0", "2.8.1", "2.8.2" */
-)
+scalaVersion := "2.11.2"
 
 // These options will be used for *all* versions.
 scalacOptions ++= Seq(
@@ -54,23 +46,23 @@ scalacOptions <++= scalaVersion map { sv =>
 
 javacOptions ++= Seq("-Xlint:unchecked", "-Xlint:deprecation")
 
-val akka = "2.3.3"
-val spray = "1.3.1-20140423"
+val akka = "2.3.6"
+val spray = "1.3.1"
 
 /* dependencies */
 libraryDependencies ++= Seq (
-  "com.github.nscala-time" %% "nscala-time" % "1.2.0"
+  "com.github.nscala-time" %% "nscala-time" % "1.4.0"
   // -- testing --
-  , "org.scalatest" % "scalatest_2.11" % "2.2.0" % "test"
+  , "org.scalatest" % "scalatest_2.11" % "2.2.2" % "test"
   // -- Logging --
   ,"ch.qos.logback" % "logback-classic" % "1.1.2"
-  ,"com.typesafe.scala-logging" %% "scala-logging-slf4j" % "2.1.2"
+  ,"com.typesafe.scala-logging" %% "scala-logging" % "3.1.0"
   // -- Akka --
   ,"com.typesafe.akka" %% "akka-testkit" % akka % "test"
   ,"com.typesafe.akka" %% "akka-actor" % akka
   ,"com.typesafe.akka" %% "akka-slf4j" % akka
   // -- Sql --
-  //,"com.typesafe.slick" %% "slick" % "2.0.2"
+  //,"com.typesafe.slick" %% "slick" % "2.1.0"
   // -- Spray --
   //,"io.spray" %% "spray-routing" % spray
   ,"io.spray" %% "spray-client" % spray
@@ -88,8 +80,4 @@ resolvers ++= Seq(
   //"spray repo" at "http://repo.spray.io"
 )
 
-//atmosSettings
-
 packageArchetype.java_server
-
-seq(Revolver.settings: _*)
