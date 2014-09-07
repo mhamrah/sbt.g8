@@ -10,14 +10,15 @@ g8 mhamrah/sbt
 ```
 #Also features a template for Spray-Routing apps
 g8 mhamrah/sbt -b spray
+
+#And for Spark Apps
+g8 mhamrah/sbt -b spark
 ```
 
 ## Notes
 
 - Use Scala 2.11.1 and sbt 0.13
-- [Typesafe Console](https://github.com/sbt/sbt-atmos) support
 - Consolidated build.sbt file: akka, scalatest, logback, typesafe config and slick are included.
 - [SBT Native Packager](https://github.com/sbt/sbt-native-packager) for distributions
 
 [Read about g8](http://github.com/n8han/giter8#readme)
-
