@@ -25,28 +25,17 @@ scalacOptions ++= Seq(
   ,"-unchecked"
   ,"-encoding", "UTF-8"
   ,"-Xlint"
-  // "-optimise"   // this option will slow your build
+  ,"-Yclosure-elim"
+  ,"-Yinline"
+  ,"-Xverify"
+  ,"-feature"
+  ,"-language:postfixOps"
+  //,"-optimise"
 )
-
-scalacOptions ++= Seq(
-  "-Yclosure-elim",
-  "-Yinline"
-)
-
-// These language flags will be used only for 2.10.x.
-// Uncomment those you need, or if you hate SIP-18, all of them.
-scalacOptions <++= scalaVersion map { sv =>
-  if (sv startsWith "2.11") List(
-    "-Xverify"
-    ,"-feature"
-    ,"-language:postfixOps"
-  )
-  else Nil
-}
 
 javacOptions ++= Seq("-Xlint:unchecked", "-Xlint:deprecation")
 
-val akka = "2.3.6"
+val akka = "2.3.7"
 val spray = "1.3.2"
 
 /* dependencies */
