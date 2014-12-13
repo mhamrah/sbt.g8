@@ -17,8 +17,11 @@ g8 mhamrah/sbt -b spark
 
 ## Notes
 
-- Use Scala 2.11.1 and sbt 0.13
+- Go-style directory layout
 - Consolidated build.sbt file: akka, scalatest, logback, typesafe config and slick are included.
 - [SBT Native Packager](https://github.com/sbt/sbt-native-packager) for distributions
+
+
+I dislike the maven directory layout, and prefer Go's simplified path model with tests next to classes. This project modifies build.sbt to search for source files in different places than the default.
 
 [Read about g8](http://github.com/n8han/giter8#readme)

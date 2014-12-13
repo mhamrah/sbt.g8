@@ -57,7 +57,8 @@ libraryDependencies ++= Seq (
   ,"io.spray" %% "spray-client" % spray
   //,"io.spray" %% "spray-testkit" % spray % "test"
   // -- json --
-  ,"org.json4s" %% "json4s-jackson" % "3.2.10"
+  //,"org.json4s" %% "json4s-jackson" % "3.2.10"
+  ,"com.typesafe.play" %% "play-json" % "2.3.4"
   // -- config --
   ,"com.typesafe" % "config" % "1.2.1"
 )
@@ -70,3 +71,15 @@ resolvers ++= Seq(
 )
 
 packageArchetype.java_server
+
+scalaSource in Compile := baseDirectory.value / "src"
+
+scalaSource in Test := baseDirectory.value / "src"
+
+excludeFilter in (Compile, unmanagedSources) := HiddenFileFilter || "*_test.scala"
+
+excludeFilter in (Test, unmanagedSources) := HiddenFileFilter
+
+resourceDirectory in Compile := baseDirectory.value / "resources"
+resourceDirectory in Test := baseDirectory.value / "resources"
+
