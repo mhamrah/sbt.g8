@@ -58,7 +58,7 @@ libraryDependencies ++= Seq (
   //,"io.spray" %% "spray-testkit" % spray % "test"
   // -- json --
   //,"org.json4s" %% "json4s-jackson" % "3.2.10"
-  ,"com.typesafe.play" %% "play-json" % "2.3.4"
+  ,"com.typesafe.play" %% "play-json" % "2.4.0-M2"
   // -- config --
   ,"com.typesafe" % "config" % "1.2.1"
 )
