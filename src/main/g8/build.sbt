@@ -70,6 +70,10 @@ resolvers ++= Seq(
   //"spray repo" at "http://repo.spray.io"
 )
 
+fork := true
+
+testOptions in Test += Tests.Argument("-oDS")
+
 packageArchetype.java_server
 
 scalaSource in Compile := baseDirectory.value / "src"
@@ -81,5 +85,5 @@ excludeFilter in (Compile, unmanagedSources) := HiddenFileFilter || "*_test.scal
 excludeFilter in (Test, unmanagedSources) := HiddenFileFilter
 
 resourceDirectory in Compile := baseDirectory.value / "resources"
-resourceDirectory in Test := baseDirectory.value / "resources"
 
+resourceDirectory in Test := baseDirectory.value / "resources"
