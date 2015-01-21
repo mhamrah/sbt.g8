@@ -53,9 +53,9 @@ libraryDependencies ++= Seq (
   // -- Sql --
   //,"com.typesafe.slick" %% "slick" % "2.1.0"
   // -- Spray --
-  //,"io.spray" %% "spray-routing" % spray
+  ,"io.spray" %% "spray-routing" % spray
   ,"io.spray" %% "spray-client" % spray
-  //,"io.spray" %% "spray-testkit" % spray % "test"
+  ,"io.spray" %% "spray-testkit" % spray % "test"
   // -- json --
   //,"org.json4s" %% "json4s-jackson" % "3.2.10"
   ,"com.typesafe.play" %% "play-json" % "2.4.0-M2"
@@ -67,7 +67,7 @@ libraryDependencies ++= Seq (
 resolvers ++= Seq(
   // Resolver.sonatypeRepo("snapshots")
   // Resolver.typesafeRepo("releases")
-  //"spray repo" at "http://repo.spray.io"
+  "spray repo" at "http://repo.spray.io"
 )
 
 fork := true
