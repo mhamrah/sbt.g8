@@ -86,4 +86,4 @@ excludeFilter in (Test, unmanagedSources) := HiddenFileFilter
 
 resourceDirectory in Compile := baseDirectory.value / "resources"
 
-resourceDirectory in Test := baseDirectory.value / "resources"
+resourceDirectory in Test := baseDirectory.value / "resources_test"
