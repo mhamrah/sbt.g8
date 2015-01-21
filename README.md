@@ -22,6 +22,8 @@ g8 mhamrah/sbt -b spark
 - [SBT Native Packager](https://github.com/sbt/sbt-native-packager) for distributions
 
 
-I dislike the maven directory layout, and prefer Go's simplified path model with tests next to classes. This project modifies build.sbt to search for source files in different places than the default.
+I dislike the maven directory layout, and prefer Go's simplified path model with 
+tests next to classes. This project modifies build.sbt to search for source
+files in different places than the default.
 
 [Read about g8](http://github.com/n8han/giter8#readme)
