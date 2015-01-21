@@ -17,7 +17,7 @@ scmInfo := Some(
 )
 
 /* scala versions and options */
-scalaVersion := "2.11.4"
+scalaVersion := "2.11.5"
 
 // These options will be used for *all* versions.
 scalacOptions ++= Seq(
@@ -35,14 +35,14 @@ scalacOptions ++= Seq(
 
 javacOptions ++= Seq("-Xlint:unchecked", "-Xlint:deprecation")
 
-val akka = "2.3.7"
+val akka = "2.3.9"
 val spray = "1.3.2"
 
 /* dependencies */
 libraryDependencies ++= Seq (
-  "com.github.nscala-time" %% "nscala-time" % "1.4.0"
+  "com.github.nscala-time" %% "nscala-time" % "1.6.0"
   // -- testing --
-  , "org.scalatest" %% "scalatest" % "2.2.2" % "test"
+  , "org.scalatest" %% "scalatest" % "2.2.3" % "test"
   // -- Logging --
   ,"ch.qos.logback" % "logback-classic" % "1.1.2"
   ,"com.typesafe.scala-logging" %% "scala-logging" % "3.1.0"
