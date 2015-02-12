@@ -8,7 +8,7 @@
       </encoder>
   </appender>
 
-  <logger name="$project_group_id$.$name;format="norm,word"$" level="debug" additivity="false">
+  <logger name="$project_group_id$.$name;format="norm,word"$" level="${$name;format="word,upper"$:-debug}" additivity="false">
     <appender-ref ref="console" />
   </logger>
 
