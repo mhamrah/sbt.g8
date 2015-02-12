@@ -19,6 +19,7 @@ g8 mhamrah/sbt -b spark
 
 - Go-style directory layout
 - Consolidated build.sbt file: akka, scalatest, logback, typesafe config and slick are included.
+- Set log level with environment variables (including fallbacks). See logback.xml and reference.conf.
 - [SBT Native Packager](https://github.com/sbt/sbt-native-packager) for distributions
 
 
