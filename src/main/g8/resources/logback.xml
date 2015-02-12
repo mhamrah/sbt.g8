@@ -8,11 +8,11 @@
       </encoder>
   </appender>
 
-  <logger name="$project_group_id$.$name;format="norm,word"$" level="${$name;format="word,upper"$:-debug}" additivity="false">
+  <logger name="$project_group_id$.$name;format="norm,word"$" level="\${$name;format="snake,upper"$_LOG:-debug}" additivity="false">
     <appender-ref ref="console" />
   </logger>
 
-  <logger name="akka" level="info" additivity="false">
+  <logger name="akka" level="\${$name;format="snake,upper"$_AKKA_LOG:-info}" additivity="false">
     <appender-ref ref="console" />
   </logger>
 
