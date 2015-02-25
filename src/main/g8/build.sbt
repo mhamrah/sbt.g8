@@ -40,9 +40,9 @@ val spray = "1.3.2"
 
 /* dependencies */
 libraryDependencies ++= Seq (
-  "com.github.nscala-time" %% "nscala-time" % "1.6.0"
+  "com.github.nscala-time" %% "nscala-time" % "1.8.0"
   // -- testing --
-  , "org.scalatest" %% "scalatest" % "2.2.3" % "test"
+  , "org.scalatest" %% "scalatest" % "2.2.4" % "test"
   // -- Logging --
   ,"ch.qos.logback" % "logback-classic" % "1.1.2"
   ,"com.typesafe.scala-logging" %% "scala-logging" % "3.1.0"
