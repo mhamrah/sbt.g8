@@ -39,11 +39,13 @@ val akka = "2.3.9"
 
 /* dependencies */
 libraryDependencies ++= Seq (
-  "org.apache.spark" %% "spark-core" % "1.2.0"
+  "org.apache.spark" %% "spark-core" % "1.3.0"
   // -- testing --
   , "org.scalatest" %% "scalatest" % "2.2.4" % "test"
   // -- Logging --
-  //,"ch.qos.logback" % "logback-classic" % "1.1.3"
+  ,"ch.qos.logback" % "logback-classic" % "1.1.3"
+  ,"org.slf4j" % "log4j-over-slf4j" % "1.7.12"
+
   //,"com.typesafe.scala-logging" %% "scala-logging" % "3.1.0"
   // -- Akka --
   //,"com.typesafe.akka" %% "akka-testkit" % akka % "test"
