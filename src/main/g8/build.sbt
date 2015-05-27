@@ -54,7 +54,7 @@ libraryDependencies ++= Seq (
   //,"com.typesafe.akka" %% "akka-http-core-experimental" % streams
   //,"com.typesafe.akka" %% "akka-http-experimental" % streams
   // -- Sql --
-  //,"com.typesafe.slick" %% "slick" % "2.1.0"
+  //,"com.typesafe.slick" %% "slick" % "3.0.0"
   // -- json --
   ,"com.typesafe.play" %% "play-json" % "2.4.0"
   // -- config --
