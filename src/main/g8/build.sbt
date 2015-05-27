@@ -35,14 +35,14 @@ scalacOptions ++= Seq(
 
 javacOptions ++= Seq("-Xlint:unchecked", "-Xlint:deprecation")
 
-val akka = "2.3.9"
+val akka = "2.3.11"
 val spray = "1.3.3"
 
 /* dependencies */
 libraryDependencies ++= Seq (
-  "com.github.nscala-time" %% "nscala-time" % "1.8.0"
+  //"com.github.nscala-time" %% "nscala-time" % "2.0.0"
   // -- testing --
-  , "org.scalatest" %% "scalatest" % "2.2.4" % "test"
+  , "org.scalatest" %% "scalatest" % "2.2.5" % "test"
   // -- Logging --
   ,"ch.qos.logback" % "logback-classic" % "1.1.3"
   ,"com.typesafe.scala-logging" %% "scala-logging" % "3.1.0"
@@ -58,9 +58,9 @@ libraryDependencies ++= Seq (
   //,"io.spray" %% "spray-testkit" % spray % "test"
   // -- json --
   //,"org.json4s" %% "json4s-jackson" % "3.2.10"
-  ,"com.typesafe.play" %% "play-json" % "2.4.0-M3"
+  ,"com.typesafe.play" %% "play-json" % "2.4.0"
   // -- config --
-  ,"com.typesafe" % "config" % "1.2.1"
+  ,"com.typesafe" % "config" % "1.3.0"
 )
 
 /* you may need these repos */
