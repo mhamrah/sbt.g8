@@ -36,13 +36,12 @@ scalacOptions ++= Seq(
 javacOptions ++= Seq("-Xlint:unchecked", "-Xlint:deprecation")
 
 val akka = "2.3.11"
-val spray = "1.3.3"
+val streams = "1.0-RC3"
 
 /* dependencies */
 libraryDependencies ++= Seq (
-  //"com.github.nscala-time" %% "nscala-time" % "2.0.0"
   // -- testing --
-  , "org.scalatest" %% "scalatest" % "2.2.5" % "test"
+  "org.scalatest" %% "scalatest" % "2.2.5" % "test"
   // -- Logging --
   ,"ch.qos.logback" % "logback-classic" % "1.1.3"
   ,"com.typesafe.scala-logging" %% "scala-logging" % "3.1.0"
@@ -50,17 +49,19 @@ libraryDependencies ++= Seq (
   ,"com.typesafe.akka" %% "akka-testkit" % akka % "test"
   ,"com.typesafe.akka" %% "akka-actor" % akka
   ,"com.typesafe.akka" %% "akka-slf4j" % akka
+  // -- Akka -- Streams
+  //,"com.typesafe.akka" %% "akka-stream-experimental" % streams
+  //,"com.typesafe.akka" %% "akka-http-core-experimental" % streams
+  //,"com.typesafe.akka" %% "akka-http-experimental" % streams
   // -- Sql --
   //,"com.typesafe.slick" %% "slick" % "2.1.0"
-  // -- Spray --
-  //,"io.spray" %% "spray-routing" % spray
-  ,"io.spray" %% "spray-client" % spray
-  //,"io.spray" %% "spray-testkit" % spray % "test"
   // -- json --
-  //,"org.json4s" %% "json4s-jackson" % "3.2.10"
   ,"com.typesafe.play" %% "play-json" % "2.4.0"
   // -- config --
   ,"com.typesafe" % "config" % "1.3.0"
+  // -- time --
+  //,"com.github.nscala-time" %% "nscala-time" % "2.0.0"
+  
 )
 
 /* you may need these repos */
